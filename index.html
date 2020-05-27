@@ -68,9 +68,41 @@ list-style:none;}
 </style> 
 </head>
 <body>
-  <div id="header">
+<!--   <div id="header"> 
     <h1>萌站</h1>
-  </div>
+</div> -->
+  
+  <div class="navigation">
+					<div class="navigation-left animated wow slideInLeft animated" data-wow-delay="700ms" style="visibility: visible; animation-delay: 700ms; animation-name: slideInLeft;">
+						<ul>
+							<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+0123 384 920</li>
+							<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">example.com</a></li>
+						</ul>
+					</div>
+					<div class="navigation-right">
+						<span class="menu"><img src="images/menu.png" alt=" "></span>
+						<nav class="link-effect-4" id="link-effect-4">
+							<ul class="nav1 nav nav-wil">
+								<li class="active"><a data-hover="Home" href="index.html">Home</a></li>
+								<li><a data-hover="About" href="#about" class="scroll">About</a></li>
+								<li><a data-hover="Services" href="#services" class="scroll">Services</a></li>
+								<li><a data-hover="Photo Gallery" href="#gallery" class="scroll">Photo Gallery</a></li>
+								<li><a data-hover="Mail Us" href="#mail" class="scroll">Mail Us</a></li>
+							</ul>
+						</nav>
+							<!-- script-for-menu -->
+								<script>
+								   $( "span.menu" ).click(function() {
+									 $( "ul.nav1" ).slideToggle( 300, function() {
+									 // Animation complete.
+									  });
+									 });
+								</script>
+							<!-- /script-for-menu -->
+					</div>
+					<div class="clearfix"></div>
+				</div>
+  
 <div id="nav">
 <ul>
 <li>
