@@ -3,10 +3,11 @@
 
 .slider, .slider .slider-img {
     overflow: hidden;
+    width:auto;
     height: 460px;
 }
 .slider {
-    width: 1200px;
+    width: auto;
     margin: 50px auto;
     position: relative;
 }
@@ -15,7 +16,7 @@
     text-shadow: 0 0 5px #666;
 }
 .slider .slider-img {
-    width: 12000px;
+    width: auto;
     position: relative;
 }
 .slider .slider-img .slider-img-ul {
@@ -28,7 +29,7 @@
     float: left;
 }
 .slider .slider-img .slider-img-ul li img {
-    width: 1200px;
+    width: auto;
     height: 460px;
 }
 .slider .slider-dot ul {
@@ -38,7 +39,7 @@
 }
 .slider .slider-dot ul li {
     cursor: pointer;
-    width: 10px;
+    width: auto;
     height: 10px;
     border-radius: 50%;
     background: #ccc;
@@ -51,7 +52,7 @@
 }
 .slider .slider-btn {
     position: absolute;
-    width: 50px;
+    width: auto;
     height: 100px;
     top: 50%;
     line-height: 100px;
