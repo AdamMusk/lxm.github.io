@@ -4,6 +4,7 @@
 .slider, .slider .slider-img {
     overflow: hidden;
     height: 460px;
+    width:100%;
 }
 .slider {
     width: 100%;
