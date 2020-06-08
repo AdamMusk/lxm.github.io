@@ -20,6 +20,9 @@
     position: relative;
 }
 .slider .slider-img .slider-img-ul {
+    
+    max-width: 100%;
+    
     position: absolute;
     left: 0;
     top: 0;
