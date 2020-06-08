@@ -2,6 +2,9 @@
 *{margin:0;padding:0;list-style-type:none;}
 
 .slider, .slider .slider-img {
+    
+    max-width: 100%;
+    
     overflow: hidden;
     width:auto;
     height: 460px;
@@ -19,10 +22,7 @@
     width: auto;
     position: relative;
 }
-.slider .slider-img .slider-img-ul {
-    
-    max-width: 100%;
-    
+.slider .slider-img .slider-img-ul {   
     position: absolute;
     left: 0;
     top: 0;
