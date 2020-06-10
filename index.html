@@ -9,6 +9,40 @@
 			font-size: 50px;
 			text-align: center;		
 		}
+                
+                
+                $(function(){
+    //如果页面内容高度小于屏幕高度，div#footer将绝对定位到屏幕底部，否则div#footer保留它的正常静态定位 
+    $(window).bind("load", function() { 
+        var footerHeight = 0, 
+        footerTop = 0, 
+        $footer = $(".footer_db"); 
+        positionFooter(); 
+        //定义positionFooter function 
+        function positionFooter() { 
+            //取到div#footer高度 
+            footerHeight = $footer.height(); 
+            //div#footer离屏幕顶部的距离 
+            footerTop = ($(window).scrollTop()+$(window).height()-footerHeight)+"px"; 
+           
+            //如果页面内容高度小于屏幕高度，div#footer将绝对定位到屏幕底部，否则div#footer保留它的正常静态定位 
+            if ( ($(document.body).height()) < $(window).height()) { 
+                $footer.css({ 
+                    position: "absolute" 
+                }).stop().animate({ 
+                    top: footerTop
+                }); 
+            } else { 
+                $footer.css({ 
+                    position: "static" 
+                }); 
+            } 
+        } 
+        $(window).scroll(positionFooter).resize(positionFooter); 
+    }); 
+})
+                
+                
 	</style>
 </head>
 
@@ -182,7 +216,7 @@
 	</style>
 	    	    <div class="section-background-overlay background-overlay grid-overlay-0 " style="background-color: transparent;"></div>
 
-    <div class="container">
+    <div class="footer">
         <div class="row qfe_row">
             <div data-animaleinbegin="90%" data-animalename="qfyfadeInUp" data-duration="" data-delay="" class=" qfy-column-6-5ee0d89c28c44989551 qfy-column-inner  vc_span12  text-default small-screen-undefined fullrow" data-dw="1/1" data-fixheight=""><div style=";position:relative;" class="column_inner "><div class=" background-overlay grid-overlay-" style="background-color:transparent;width:100%;"></div><div class="column_containter" style="z-index:3;position:relative;">
 	<div m-padding="0px 0px 0px 0px" p-padding="0 0 0 0" css_animation_delay="0" qfyuuid="qfy_column_text_o9wel" data-anitime="0.7" data-ani_iteration_count="1" class="qfy-element qfy-text qfy-text-95196 qfe_text_column qfe_content_element  mobile_fontsize " style="position: relative;;;line-height:1.5em;;background-position:left top;background-repeat: no-repeat;;margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;border-radius:0px;">
@@ -202,7 +236,7 @@
 	</style>
 	    	    <div class="section-background-overlay background-overlay grid-overlay-0 " style="background-color: transparent;"></div>
 
-    <div class="container">
+    <div class="footer" style="width: 100%;>
         <div class="row qfe_row">
             <div data-animaleinbegin="90%" data-animalename="qfyfadeInUp" data-duration="" data-delay="" class=" qfy-column-7-5ee0d89c28d86836719 qfy-column-inner  vc_span12  text-default small-screen-undefined fullrow" data-dw="1/1" data-fixheight=""><div style=";position:relative;" class="column_inner "><div class=" background-overlay grid-overlay-" style="background-color:transparent;width:100%;"></div><div class="column_containter" style="z-index:3;position:relative;">
 	<div m-padding="0px 0px 0px 0px" p-padding="0 0 0 0" css_animation_delay="0" qfyuuid="qfy_column_text_1foqr" data-anitime="0.7" data-ani_iteration_count="1" class="qfy-element qfy-text qfy-text-45649 qfe_text_column qfe_content_element  mobile_fontsize " style="position: relative;;;line-height:1.5em;;background-position:left top;background-repeat: no-repeat;;margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;border-radius:0px;">
