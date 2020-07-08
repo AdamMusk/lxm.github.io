@@ -43,60 +43,12 @@
 		}
 		p>span>span>span>sapn{
 			color:pink;
+		}	
+		.footer{
+			height:50px;position:fixed;bottom:0px;left:0px;
 		}
-	
-	}
 		
-		.myfooter{
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background: #2A7491;
-}
-.copyright{
-    width: 420px;
-    margin: 0 auto;
-    color: #ffffff;
-}
-
-.copyright img{
-    width: 120px;
-    height: 60px;
-}
-		.copyright p{
-    font-size: 14px;
-}
-
-
-.fixed-footer{
-    position: fixed;
-    bottom: 0;
-}
-	
-	
-	
-	
-
-
 	</style>
-	$(function(){
-    function footerPosition(){
-      $("footer").removeClass("fixed-footer");
-      var contentHeight = document.body.scrollHeight,//网页正文全文高度
-          winHeight = window.innerHeight;//可视窗口高度，不包括浏览器顶部工具栏
-      if(!(contentHeight > winHeight)){
-          //当网页正文高度小于可视窗口高度时，为footer添加类fixed-footer
-          $("footer").addClass("fixed-footer");
-          $(".content").height(winHeight);
-      } else {
-          $("footer").removeClass("fixed-footer");
-          }
-      }
-      footerPosition();
-      $(window).resize(footerPosition);
-});
-
-
 	
 </head>
 
@@ -149,14 +101,10 @@
 	
 
 	
-	<!-- myfooter start -->
-	<footer class="myfooter">
-        <div class="copyright">
-            <p><img src="login/img/logo.jpg" />Copyright &copy; XXXXXXXXX有限公司</p>
+	
+            <div class="footer">
 		<p align="center">Copyright 2020 萌吧 All Rights Rserved</p>
-        </div>
-        </footer>
-        <!-- myfooter end -->
+	    </div>
 
 	
 	
