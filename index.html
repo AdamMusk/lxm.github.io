@@ -48,16 +48,29 @@
 			height:50px;position:fixed;bottom:0px;left:0px;
 		}
 		
+		.Site {
+                       display: flex;
+                       display: -webkit-flex; /* Safari */
+                       min-height: 100vh;
+                       flex-direction: column;
+                 }
+
+                .Site-content {
+                               flex: 1;
+                 }
+
+		
 	</style>
 	
 </head>
 
-<body>
+<body class="Site">
 	
 	
 	
-	   <div name="头部导航">
-	   </div>
+	   <header>
+	</header>
+	<main class="Site-content">
 
 	
 	<div name="幻灯片">
@@ -98,13 +111,12 @@
 		<a href="https://mail.qq.com/"><p class="qqmail" align="center">1927896868@qq.com</p></a>
 	</div>
 	
-	
+	</main>
 
-	
-	
-            <div class="footer">
+	<footer>
 		<p align="center">Copyright 2020 萌吧 All Rights Rserved</p>
-	    </div>
+	</footer>
+	   
 
 	
 	
