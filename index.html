@@ -31,15 +31,19 @@
 			text-shadow: 0.1em 0.1em black;
 		}
 		.about {
-			font-size: 50px;
+			font-size: 40px;
 			color:red;
 		}
 		.products {
-			font-size:50px;
+			font-size:40px;
+			color:red;
+		}
+		.more{
+			font-size:40px;
 			color:red;
 		}
 		.contact {
-			font-size:50px;
+			font-size:40px;
 			color:red;
 		}
 		.ndnhlxm {
@@ -78,6 +82,42 @@
 			font-size: 30px;
 			color: blue;
 		}
+		.menu{
+			font-size: 16px;
+			position: absolute;
+			top:120px;
+			left:550px;
+			right: 550px;
+			padding: 0;
+			margin: 0;
+			list-style-type:none;
+			white-space: nowrap;
+		}
+		.menu li{
+			float:left;
+			min-width: 100px;
+		}
+		.menu a{
+			position: relative;
+			display: block;
+			text-decoration:underline;
+			min-width: 100px;
+		}
+		* html .menu a{
+			width:100px;
+		}
+		* html .menu a span{
+			width:100px;
+			cursor: hand;
+			width:66px;
+		}
+		.menu a b{
+			display: block;
+			border-bottom: 2px solid pink;
+		}
+		.menu a em{
+			display: none;
+		}
 		/* .divlxm01{
 		
 		} */
@@ -90,48 +130,65 @@
     <div>	
 	   <header>
                  <h1 class="header" align="center">萌吧</h1>
-	   </header>	
+	   </header>
+	   <!-- <div>
+		   <ul class="menu">
+			   <li><a href="#about"><b><span>ABOUT</span></b><em></em></a></li>
+			   <li><a href="#products"><b><span>PRODUCTS</span></b><em></em></a></li>
+			   <li><a href="#more"><b><span>MORE</span></b><em></em></a></li>
+			   <li><a href="#contact"><b><span>CONTACT</span></b><em></em></a></li>
+		   </ul>
+	   </div><br>
+    </div> -->
+
+	<!-- 导航条 -->
+	<!-- <p><a href="#sjpt">链接到社交平台</a></p>   链接到指定区域 -->
 
 	<div name="ABOUT">
-		<p class="about" align="center" >❤ABOUT❤</p>
+		<p class="about" id="about" align="center" >❤ABOUT❤</p>
 	</div>	
 	<div name="介绍" class="about1">
 		<p align="center"><b>Hi!谢谢你在世界的角落找到我☆⌒(*＾-゜)</b></p>
 		<p align="center"><b>这里是你的女孩<span class="about2">梁小萌</span></b></p>
         <p align="center"><b>大家都喜欢叫我<span class="about2">小萌～</span></b></p>
-		   <p align="center"><b>抖音＆微博: <span class="about2">一口萌echo</span></b></p>
-		   <p align="center"><b>图虫：<span class="about2">梁小萌</span>（拍过的写真都发这里～）</b></p>
-		   <p align="center"><b>热衷于make up、拍照和穿搭，以及一切让自己变美丽的事</b></p>
-		   <p align="center"><b>一直以来都是典型的闷闷土象星座性格，不擅长表达自己，慢热也有点小自卑</b></p>
-		   <p align="center"><b>发博也很少会有表达自己的句子，尽管这样还是遇到了一群默默支持着喜欢着我的朋友们，我真的太幸运了!</b></p>	     
+		<p align="center"><b>抖音＆微博: <span class="about2">一口萌echo</span></b></p>
+		<p align="center"><b>图虫：<span class="about2">梁小萌</span>（拍过的写真都发这里～）</b></p>
+		<p align="center"><b>热衷于make up、拍照和穿搭，以及一切让自己变美丽的事</b></p>
+		<p align="center"><b>一直以来都是典型的闷闷土象星座性格，不擅长表达自己，慢热也有点小自卑</b></p>
+		<p align="center"><b>发博也很少会有表达自己的句子，尽管这样还是遇到了一群默默支持着喜欢着我的朋友们，我真的太幸运了!</b></p>	     
 	</div>
 	
-	<div class="sjpt" name="社交平台">
-		<a href="https://m.weibo.cn/u/3217035437?refer_flag=1005050010_&jumpfrom=weibocom"><span class="about3">微博</span></a><br/>
-		<a href="https://tuchong.com/2602076/"><span class="about4">图虫</span></a><br/>
-		<a href="https://www.iesdouyin.com/share/user/63578686131?sec_uid=MS4wLjABAAAAE0Z6cepNizOtGdror1cMWzG3AgTD-HDZnsixZvwnM1w&u_code=11k1h1gh4&utm_campaign=client_share&app=aweme&utm_medium=ios&tt_from=copy&utm_source=copy"><span class="about5">抖音</span></a><br/>
-		<a href="https://m.bilibili.com/space/6775825?share_source=copy_link&share_medium=iphone&bbid=4a3da689dde817d0a34a9537b6433d49&ts=1587560180"><span class="about6">B站</span></a>
-
-	</div>
 	<div name="PRODUCTS">
-		<p class="products" align="center" >❤PRODUCTS❤</p>
+		<p class="products" id="products" align="center" >❤PRODUCTS❤</p>
 		<!-- <div class="divlxm01"><img class="lxm01" src="" width="" height=""></div> -->
 		<!-- <video width="" height="" controls>
 			<source src="" type="video/mp4">
 		</video> -->
+		<!--插入静态图和动态图，插入整合的一条视频-->
 		<p class="jqqd" align="center">服务器准备升级，图片和视频敬请期待！</p>
 	</div>
+
+	<div name="MORE">
+		<p class="more" id="more" align="center" >❤MORE❤</p>
+	</div>
+
+	<div class="sjpt" id="sjpt" name="社交平台">
+		<a href="https://m.weibo.cn/u/3217035437?refer_flag=1005050010_&jumpfrom=weibocom" target="_blank"><span class="about3">微博</span></a><br/>
+		<a href="https://tuchong.com/2602076/" target="_blank"><span class="about4">图虫</span></a><br/>
+		<a href="https://www.iesdouyin.com/share/user/63578686131?sec_uid=MS4wLjABAAAAE0Z6cepNizOtGdror1cMWzG3AgTD-HDZnsixZvwnM1w&u_code=11k1h1gh4&utm_campaign=client_share&app=aweme&utm_medium=ios&tt_from=copy&utm_source=copy" target="_blank"><span class="about5">抖音</span></a><br/>
+		<a href="https://m.bilibili.com/space/6775825?share_source=copy_link&share_medium=iphone&bbid=4a3da689dde817d0a34a9537b6433d49&ts=1587560180" target="_blank"><span class="about6">B站</span></a>
+	</div>
+
 	<div name="CONTACT">
-		<p class="contact" align="center" >❤CONTACT❤</p>
+		<p class="contact" id="contact" align="center" >❤CONTACT❤</p>
 	</div>
 	
 	<div name="邮箱地址">
 		<a href="https://mail.qq.com/"><p class="qqmail" align="center">1927896868@qq.com</p></a>
 	</div>	
-	</main>
+
 	<footer class="footer">
-		<p align="center">Copyright 2020 萌吧 All Rights Rserved</p>
+		<p align="center">COPYRIGHT © 2020 萌吧 | ALL RIGHTS RESERVED</p>
 	</footer>
-</div>
 </body>
 </html>
